@@ -4,7 +4,7 @@ import com.howtis.api.client.impl.TmdbApiRestClientImpl;
 
 public class TmdbApiClientFactory {
 
-    private String apiAccessToken;
+    private final String apiAccessToken;
 
     private TmdbApiClientFactory(String apiAccessToken) {
         this.apiAccessToken = apiAccessToken;
