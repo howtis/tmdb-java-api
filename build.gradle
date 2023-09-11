@@ -3,9 +3,6 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.howtis'
-version = '1.0-SNAPSHOT'
-
 repositories {
     mavenCentral()
 }
