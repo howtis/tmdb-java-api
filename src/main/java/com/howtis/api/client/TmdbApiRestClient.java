@@ -21,7 +21,7 @@ public interface TmdbApiRestClient {
 
     MovieResponse searchMovie(String search);
 
-    MovieResponse searchMovie(String search, Map<String, Object> queryMap);
+    MovieResponse searchMovie(Map<String, Object> queryMap);
 
     MovieResponse getSimilarMovie(int id);
 

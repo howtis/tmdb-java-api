@@ -71,6 +71,16 @@ public class TmdbApiServiceTest {
     }
 
     @Test
+    void testSearchMap() {
+        Map<String, Object> searchMap = Map.of(
+                "query", "엘",
+                "page", 2
+        );
+        MovieResponse results = tmdbApiRestClient.searchMovie(searchMap);
+        System.out.println(results);
+    }
+
+    @Test
     void testSimilarMovie() {
         int movieId = 315162;
         MovieResponse similarMovie = tmdbApiRestClient.getSimilarMovie(movieId);

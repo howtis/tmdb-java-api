@@ -48,7 +48,7 @@ public class TmdbApiRestClientImpl implements TmdbApiRestClient {
     }
 
     @Override
-    public MovieResponse searchMovie(String search, Map<String, Object> queryMap) {
+    public MovieResponse searchMovie(Map<String, Object> queryMap) {
         Map<String, Object> query = setDefaultOptions(queryMap);
         return executeSync(tmdbApiService.getMovieSearch(query));
     }
